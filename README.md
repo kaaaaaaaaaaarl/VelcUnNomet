@@ -2,8 +2,8 @@
 VelcUnNomet lieta. bernu spele
 
 ### veicamo darbu skaits
-- [ ] speles ainas iekartosana
-- [ ] objektu vilksana
+- [x] speles ainas iekartosana
+- [x] objektu vilksana
 - [ ] objektu novietosana
 - [ ] objektu rotesana
 - [ ] lieluma mainisana
