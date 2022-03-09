@@ -22,7 +22,9 @@ public class Objecti : MonoBehaviour {
 	public bool vaiIastaVieta = false;
 	public GameObject pedejaisVilk = null;
 	void Start () {
-		
+		atkrKoord = atkritumuMasina.GetComponent<RectTransform> ().localPosition;
+		atraKoord = atraPalidziba.GetComponent<RectTransform> ().localPosition;
+		bussKoord = autobuss.GetComponent<RectTransform> ().localPosition;
 	}
 	
 	// Update is called once per frame
