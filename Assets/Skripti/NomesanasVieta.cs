@@ -50,41 +50,50 @@ public class NomesanasVieta : MonoBehaviour, IDropHandler {
 					switch (notikums.pointerDrag.tag) {
 					case "Atkritumi":
 						objektuSkripts.skanasAvots.PlayOneShot (objektuSkripts.skanaKoAtskanot [1]);
+						objektuSkripts.vina [0] = true;
 						break;
 
 					case "Slimnica":
 						objektuSkripts.skanasAvots.PlayOneShot (objektuSkripts.skanaKoAtskanot [2]);
+						objektuSkripts.vina [1] = true;
 						break;
 
 					case "Skola":
-						objektuSkripts.skanasAvots.PlayOneShot (objektuSkripts.skanaKoAtskanot [3]);
+						objektuSkripts.skanasAvots.PlayOneShot (objektuSkripts.skanaKoAtskanot [4]);
+						objektuSkripts.vina [2] = true;
 						break;
 
 					case "b2":
-						objektuSkripts.skanasAvots.PlayOneShot (objektuSkripts.skanaKoAtskanot [4]);
+						objektuSkripts.skanasAvots.PlayOneShot (objektuSkripts.skanaKoAtskanot [3]);
+						objektuSkripts.vina [3] = true;
 						break;
 					case "e46":
-						objektuSkripts.skanasAvots.PlayOneShot (objektuSkripts.skanaKoAtskanot [5]);
+						objektuSkripts.skanasAvots.PlayOneShot (objektuSkripts.skanaKoAtskanot [4]);
+						objektuSkripts.vina [4] = true;
 						break;
 					case "cementaMasina":
-						objektuSkripts.skanasAvots.PlayOneShot (objektuSkripts.skanaKoAtskanot [6]);
+						objektuSkripts.skanasAvots.PlayOneShot (objektuSkripts.skanaKoAtskanot [5]);
+						objektuSkripts.vina [5] = true;
 						break;
 					case "policija":
-						objektuSkripts.skanasAvots.PlayOneShot (objektuSkripts.skanaKoAtskanot [7]);
+						objektuSkripts.skanasAvots.PlayOneShot (objektuSkripts.skanaKoAtskanot [6]);
+						objektuSkripts.vina [6] = true;
 						break;
 					case "traktor1":
-						objektuSkripts.skanasAvots.PlayOneShot (objektuSkripts.skanaKoAtskanot [8]);
-						break;case "b2":
-						objektuSkripts.skanasAvots.PlayOneShot (objektuSkripts.skanaKoAtskanot [9]);
+						objektuSkripts.skanasAvots.PlayOneShot (objektuSkripts.skanaKoAtskanot [7]);
+						objektuSkripts.vina [7] = true;
 						break;
 					case "traktor2":
-						objektuSkripts.skanasAvots.PlayOneShot (objektuSkripts.skanaKoAtskanot [10]);
+						objektuSkripts.skanasAvots.PlayOneShot (objektuSkripts.skanaKoAtskanot [9]);
+						objektuSkripts.vina [8] = true;
 						break;
 					case "udens":
-						objektuSkripts.skanasAvots.PlayOneShot (objektuSkripts.skanaKoAtskanot [11]);
+						objektuSkripts.skanasAvots.PlayOneShot (objektuSkripts.skanaKoAtskanot [10]);
+						objektuSkripts.vina [9] = true;
 						break;
 					case "eskavator":
-						objektuSkripts.skanasAvots.PlayOneShot (objektuSkripts.skanaKoAtskanot [12]);
+						objektuSkripts.skanasAvots.PlayOneShot (objektuSkripts.skanaKoAtskanot [11]);
+						objektuSkripts.vina [10] = true;
 						break;
 
 
@@ -114,40 +123,40 @@ public class NomesanasVieta : MonoBehaviour, IDropHandler {
 
 				case "Skola":
 					objektuSkripts.autobuss.GetComponent<RectTransform> ().localPosition 
-					= objektuSkripts.bussKoord;
+					= objektuSkripts.atroKoord;
 					break;
 
 				case "b2":
 					objektuSkripts.b2.GetComponent<RectTransform> ().localPosition 
-					= objektuSkripts.bussKoord;
+					= objektuSkripts.b2koord;
 					break;
 				case "e46":
 					objektuSkripts.e46.GetComponent<RectTransform> ().localPosition 
-					= objektuSkripts.bussKoord;
+					= objektuSkripts.e46koord;
 					break;
 				case "cementaMasina":
 					objektuSkripts.cementaMasina.GetComponent<RectTransform> ().localPosition 
-					= objektuSkripts.bussKoord;
+					= objektuSkripts.cementakoord;
 					break;
 				case "policija":
 					objektuSkripts.policija.GetComponent<RectTransform> ().localPosition 
-					= objektuSkripts.bussKoord;
+					= objektuSkripts.policijakoord;
 					break;
 				case "traktor1":
 					objektuSkripts.traktor1.GetComponent<RectTransform> ().localPosition 
-					= objektuSkripts.bussKoord;
+					= objektuSkripts.traktor1koord;
 					break;
 				case "traktor2":
 					objektuSkripts.traktor2.GetComponent<RectTransform> ().localPosition 
-					= objektuSkripts.bussKoord;
+					= objektuSkripts.traktor2koord;
 					break;
 				case "udens":
 					objektuSkripts.udens.GetComponent<RectTransform> ().localPosition 
-					= objektuSkripts.bussKoord;
+					= objektuSkripts.Udenskoord;
 					break;
 				case "eskavator":
 					objektuSkripts.eskavator.GetComponent<RectTransform> ().localPosition 
-					= objektuSkripts.bussKoord;
+					= objektuSkripts.eskavatorskoord;
 					break;
 
 

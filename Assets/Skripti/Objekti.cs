@@ -46,11 +46,14 @@ public class Objekti : MonoBehaviour {
 	public AudioSource skanasAvots;
 	//Masīvs, kas uzglabā visas iespējamās skaņas
 	public AudioClip[] skanaKoAtskanot;
+	public bool[] vina;
 	//Mainīgais piefiksē vai objekts nolikts īstajāvietā (true/false)
 	[HideInInspector]
 	public bool vaiIstajaVieta = false;
 	//Uzglabās pēdējo objektu, kurš pakustināts
 	public GameObject pedejaisVIlktais = null;
+
+
 
 	// Use this for initialization
 	void Start () {
