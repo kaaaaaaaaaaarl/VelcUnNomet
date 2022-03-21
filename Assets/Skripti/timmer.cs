@@ -11,4 +11,5 @@ public class timmer : MonoBehaviour {
 			LaiksAtlicis += Time.deltaTime;
 
 	}
+
 }

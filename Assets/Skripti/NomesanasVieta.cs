@@ -5,6 +5,10 @@ using UnityEngine.EventSystems;
 
 
 public class NomesanasVieta : MonoBehaviour, IDropHandler {
+	public void check(){
+		if(objektuSkripts.vina [0]==true && objektuSkripts.vina [1]==true && objektuSkripts.vina [2]==true && objektuSkripts.vina [3]==true && objektuSkripts.vina [4]==true && objektuSkripts.vina [5]==true && objektuSkripts.vina [6]==true && objektuSkripts.vina [7]==true && objektuSkripts.vina [8]==true && objektuSkripts.vina [9]==true && objektuSkripts.vina [10]==true){
+
+		}}
 	//Uzglabās velkamā objekta un nomešanas lauka z rotāciju,
 	// kāarī rotācijas un izmēru pieļaujamo starpību
 	private float vietasZrot, velkObjZrot, rotacijasStarpiba, xIzmeruStarp, yIzmeruStarp;
@@ -51,49 +55,60 @@ public class NomesanasVieta : MonoBehaviour, IDropHandler {
 					case "Atkritumi":
 						objektuSkripts.skanasAvots.PlayOneShot (objektuSkripts.skanaKoAtskanot [1]);
 						objektuSkripts.vina [0] = true;
+						check ();
 						break;
 
 					case "Slimnica":
 						objektuSkripts.skanasAvots.PlayOneShot (objektuSkripts.skanaKoAtskanot [2]);
 						objektuSkripts.vina [1] = true;
+						check ();
 						break;
 
 					case "Skola":
 						objektuSkripts.skanasAvots.PlayOneShot (objektuSkripts.skanaKoAtskanot [4]);
 						objektuSkripts.vina [2] = true;
+						check ();
 						break;
 
 					case "b2":
 						objektuSkripts.skanasAvots.PlayOneShot (objektuSkripts.skanaKoAtskanot [3]);
 						objektuSkripts.vina [3] = true;
+						check ();
 						break;
 					case "e46":
 						objektuSkripts.skanasAvots.PlayOneShot (objektuSkripts.skanaKoAtskanot [4]);
 						objektuSkripts.vina [4] = true;
+						check ();
 						break;
 					case "cementaMasina":
 						objektuSkripts.skanasAvots.PlayOneShot (objektuSkripts.skanaKoAtskanot [5]);
 						objektuSkripts.vina [5] = true;
+						check ();
 						break;
 					case "policija":
 						objektuSkripts.skanasAvots.PlayOneShot (objektuSkripts.skanaKoAtskanot [6]);
 						objektuSkripts.vina [6] = true;
+						check ();
 						break;
 					case "traktor1":
 						objektuSkripts.skanasAvots.PlayOneShot (objektuSkripts.skanaKoAtskanot [7]);
 						objektuSkripts.vina [7] = true;
+						check ();
 						break;
 					case "traktor2":
 						objektuSkripts.skanasAvots.PlayOneShot (objektuSkripts.skanaKoAtskanot [9]);
 						objektuSkripts.vina [8] = true;
+						check ();
 						break;
 					case "udens":
 						objektuSkripts.skanasAvots.PlayOneShot (objektuSkripts.skanaKoAtskanot [10]);
 						objektuSkripts.vina [9] = true;
+						check ();
 						break;
 					case "eskavator":
 						objektuSkripts.skanasAvots.PlayOneShot (objektuSkripts.skanaKoAtskanot [11]);
 						objektuSkripts.vina [10] = true;
+						check ();
 						break;
 
 
@@ -167,8 +182,11 @@ public class NomesanasVieta : MonoBehaviour, IDropHandler {
 				}
 
 			}
+	
 		}
+
 	}
+
 }
 
 /*
