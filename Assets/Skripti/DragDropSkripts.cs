@@ -19,9 +19,7 @@ public class DragDropSkripts : MonoBehaviour, IPointerDownHandler, IBeginDragHan
 		//Piekļūst objekta RectTransform komponentei
 		velkObjRectTransf = GetComponent<RectTransform>();
 		//restarte lai vinnas situacija ir false vienmer
-		for (int i = 0; i < 11; i++) {
-			objektuSkripts.vina [i] = false;
-		}
+
 	}
 
 	public void OnPointerDown(PointerEventData notikums){
