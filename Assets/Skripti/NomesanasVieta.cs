@@ -2,18 +2,27 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 
 public class NomesanasVieta : MonoBehaviour, IDropHandler {
+
+	public float LaiksAtlicis = 0;
+	void Update () {
+		LaiksAtlicis += Time.deltaTime;
+	}
+	public GameObject victory;
+	public Text tekst;
 	public void check(){
 		if(objektuSkripts.vina [0]==true && objektuSkripts.vina [1]==true && objektuSkripts.vina [2]==true && objektuSkripts.vina [3]==true && objektuSkripts.vina [4]==true && objektuSkripts.vina [5]==true && objektuSkripts.vina [6]==true && objektuSkripts.vina [7]==true && objektuSkripts.vina [8]==true && objektuSkripts.vina [9]==true && objektuSkripts.vina [10]==true){
-
+			victory.SetActive(true);
+			tekst.text = "jus izterejat" + LaiksAtlicis.ToString() + "sekundes";
 		}}
 	//Uzglabās velkamā objekta un nomešanas lauka z rotāciju,
 	// kāarī rotācijas un izmēru pieļaujamo starpību
 	private float vietasZrot, velkObjZrot, rotacijasStarpiba, xIzmeruStarp, yIzmeruStarp;
 	private Vector2 vietasIzm, velkObjIzm;
-	//Norāde uz Objekti skriptu
+	//Norāde uz Objekti skriptu 
 	public Objekti objektuSkripts;
 
 	//Nostrādās, ja objektu cenšas nomest uz jebkuras nomešanas  vietas
