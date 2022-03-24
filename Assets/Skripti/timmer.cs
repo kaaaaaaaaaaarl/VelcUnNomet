@@ -17,14 +17,26 @@ public class timmer : MonoBehaviour {
 	public Text tekst;
 	static public int winCount=0;
 	public int cheet=0;
+	public int show=0;
 	bool timmerBool=true;
 	void Start(){
 		victory.SetActive(false);
 		star1.SetActive(false);
 		star2.SetActive(false);
 		star3.SetActive(false);
+		winCount=0;
+		show=0;
 	}
 
+	public void restart(){
+		victory.SetActive(false);
+		star1.SetActive(false);
+		star2.SetActive(false);
+		star3.SetActive(false);
+		winCount=0;
+
+	
+	}
 	void Update () {
 		if(timmerBool==true){
 			LaiksAtlicis += Time.deltaTime;
@@ -32,7 +44,9 @@ public class timmer : MonoBehaviour {
 
 
 
-		winCount = cheet;
+		show = winCount;
+		//winCount = show;
+
 		if(winCount >=11){
 			timmerBool = false;
 			victory.SetActive(true);
